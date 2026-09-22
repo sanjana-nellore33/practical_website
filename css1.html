@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Program 1 - Types of CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .internal {
+            background-color: lightblue;
+            color: darkblue;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid blue;
+        }
+
+        .external {
+            background-color: lightgreen;
+            color: darkgreen;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+    <div class="container">
+
+        <h1>Types of CSS</h1>
+
+        <h2 style="color: crimson; text-align: center;">
+            Inline CSS
+        </h2>
+
+        <p style="background-color: #ffe4e1; color: #800000; padding: 15px; text-align: center;">
+            This paragraph is styled using Inline CSS.
+        </p>
+
+        <h2 class="internal">
+            Internal CSS
+        </h2>
+
+        <p class="internal">
+            This paragraph is styled using Internal CSS.
+        </p>
+
+        <h2 class="external">
+            External CSS
+        </h2>
+
+        <p class="external">
+            This section demonstrates External CSS styling.
+        </p>
+
+    </div>
+
+</body>
+</html>

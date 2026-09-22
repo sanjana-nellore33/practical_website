@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Program 3 - CSS Combinator Selectors</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 30px;
+}
+
+.box {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Descendant Selector */
+.descendant p {
+    color: green;
+}
+
+/* Child Selector */
+.child > p {
+    color: blue;
+}
+
+/* Adjacent Sibling Selector */
+.adjacent h3 + p {
+    color: red;
+    font-weight: bold;
+}
+
+/* General Sibling Selector */
+.general h3 ~ p {
+    color: purple;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+<div class="container">
+
+    <h1>CSS Combinator Selectors</h1>
+
+    <div class="box descendant">
+        <h2>1. Descendant Selector</h2>
+
+        <div>
+            <p>This paragraph is a descendant of the parent element.</p>
+
+            <div>
+                <p>This paragraph is also a descendant.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="box child">
+        <h2>2. Child Selector</h2>
+
+        <p>This paragraph is a direct child.</p>
+
+        <div>
+            <p>This paragraph is inside another div.</p>
+        </div>
+    </div>
+
+
+    <div class="box adjacent">
+        <h2>3. Adjacent Sibling Selector</h2>
+
+        <h3>Heading</h3>
+        <p>This paragraph comes immediately after the heading.</p>
+        <p>This paragraph is not immediately after the heading.</p>
+    </div>
+
+
+    <div class="box general">
+        <h2>4. General Sibling Selector</h2>
+
+        <h3>Heading</h3>
+        <p>This paragraph is a sibling of the heading.</p>
+        <p>This paragraph is also a sibling of the heading.</p>
+        <div>
+            <p>This paragraph is inside another element.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

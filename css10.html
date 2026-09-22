@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Program 10 - CSS Box Model</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            margin-bottom: 30px;
+        }
+
+        .box-model {
+            width: 300px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 8px solid #2196F3;
+            background-color: #e8f5e9;
+            text-align: center;
+        }
+
+        .content {
+            background-color: #fff3cd;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .description {
+            text-align: center;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .label {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+    <div class="container">
+
+        <h1>CSS Box Model</h1>
+
+        <p class="description">
+            The CSS Box Model consists of Content, Padding, Border, and Margin.
+        </p>
+
+        <div class="box-model">
+
+            <div class="content">
+                Content
+            </div>
+
+        </div>
+
+        <div class="label">
+            <strong>Content:</strong> The actual text or element inside the box.
+        </div>
+
+        <div class="label">
+            <strong>Padding:</strong> Space between the content and the border.
+        </div>
+
+        <div class="label">
+            <strong>Border:</strong> The boundary surrounding the padding and content.
+        </div>
+
+        <div class="label">
+            <strong>Margin:</strong> Space outside the border that separates the element from other elements.
+        </div>
+
+    </div>
+
+</body>
+</html>

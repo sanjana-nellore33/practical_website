@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Program 2 - CSS Selectors</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.title, .description {
+    text-align: center;
+}
+
+.title {
+    color: darkgreen;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: #eaf4ff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+#special {
+    background-color: #fff3cd;
+    border: 2px solid orange;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #777;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+<div class="container">
+
+    <h1>CSS Selectors</h1>
+
+    <p class="description">
+        This webpage demonstrates different types of CSS selectors.
+    </p>
+
+    <div class="card">
+        <h2>Element Selector</h2>
+        <p>The h1, h2, h3 and p elements are styled using element selectors.</p>
+    </div>
+
+    <div class="card">
+        <h2>Class Selector</h2>
+        <p class="title">This paragraph uses a class selector.</p>
+    </div>
+
+    <div class="card" id="special">
+        <h2>ID Selector</h2>
+        <p>This section uses an ID selector.</p>
+    </div>
+
+    <div class="card">
+        <h2>Attribute Selector</h2>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+    </div>
+
+    <div class="card">
+        <h2>Grouping Selector</h2>
+        <h3>HTML</h3>
+        <h3>CSS</h3>
+        <p>Multiple elements can be styled together using a grouping selector.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

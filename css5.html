@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Program 5 - CSS Backgrounds</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+}
+
+.box {
+    height: 180px;
+    margin-bottom: 25px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Background Color */
+.color {
+    background-color: lightblue;
+}
+
+/* Background Image */
+.image {
+    background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Background Repeat */
+.repeat {
+    height: 150px;
+    background-color: #fff3cd;
+    background-image: radial-gradient(circle, orange 5px, transparent 6px);
+    background-size: 30px 30px;
+    background-repeat: repeat;
+}
+
+/* Background Position and Size */
+.position {
+    background-image: url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80");
+    background-size: 300px 150px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #e8f5e9;
+}
+
+/* Background Attachment */
+.attachment {
+    height: 250px;
+    background-image: url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+p {
+    line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+<header>
+    <h1>CSS Background Properties</h1>
+    <p>Background color, image, position, size, repeat and attachment</p>
+</header>
+
+<div class="container">
+
+    <div class="box color">
+        Background Color
+    </div>
+
+    <div class="box image">
+        Background Image
+    </div>
+
+    <div class="box repeat">
+        Background Repeat
+    </div>
+
+    <div class="box position">
+        Background Position and Size
+    </div>
+
+    <div class="box attachment">
+        Background Attachment
+    </div>
+
+</div>
+
+</body>
+</html>
