@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Program 7 - Frames and Iframes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+    <div class="container">
+
+        <h1>Frames and Iframes</h1>
+
+        <h2>Iframe Example</h2>
+
+        <p>
+            An iframe is used to display another webpage inside the current webpage.
+        </p>
+
+        <iframe
+            src="https://www.wikipedia.org"
+            title="Wikipedia">
+        </iframe>
+
+        <h2>Iframe with HTML Content</h2>
+
+        <iframe
+            srcdoc="
+                <html>
+                <body style='font-family: Arial; text-align: center; padding: 30px;'>
+                    <h2>Welcome to the Iframe</h2>
+                    <p>This content is displayed inside an iframe.</p>
+                </body>
+                </html>
+            "
+            title="HTML Content">
+        </iframe>
+
+    </div>
+
+</body>
+</html>

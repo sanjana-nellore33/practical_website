@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Program 13 - Responsive Webpage</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            color: darkblue;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .container {
+                margin: 15px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+    <header>
+        <h1>Responsive Webpage</h1>
+        <p>This webpage adjusts according to screen size</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>Our Courses</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>HTML</h2>
+                <p>Learn how to create the structure of webpages.</p>
+            </div>
+
+            <div class="card">
+                <h2>CSS</h2>
+                <p>Learn how to design and style webpages.</p>
+            </div>
+
+            <div class="card">
+                <h2>JavaScript</h2>
+                <p>Learn how to add interactivity to webpages.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Responsive Webpage using CSS Media Queries</p>
+    </footer>
+
+</body>
+</html>

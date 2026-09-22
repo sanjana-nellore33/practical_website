@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Program 3 - Tables</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+    <h1>Student Details</h1>
+
+    <table>
+
+        <tr>
+            <th colspan="3">Student Information</th>
+        </tr>
+
+        <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Sanjana</td>
+            <td>B.Tech</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Rahul</td>
+            <td>B.Tech</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Priya</td>
+            <td>B.Tech</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">104</td>
+            <td>Ananya</td>
+            <td>BCA</td>
+        </tr>
+
+        <tr>
+            <td>Arun</td>
+            <td>BCA</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

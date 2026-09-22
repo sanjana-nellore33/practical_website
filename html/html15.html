@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Program 15 - Personal Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #555;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        .skills {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: #e3f2fd;
+            padding: 12px 20px;
+            border-radius: 5px;
+        }
+
+        .project {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .container {
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <p>Student | Web Technology Learner</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a student interested in web development and
+                learning new technologies. I enjoy creating simple and
+                user-friendly webpages.
+            </p>
+        </section>
+
+        <section class="section" id="skills">
+            <h2>My Skills</h2>
+
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <h3>Student Registration Form</h3>
+                <p>A simple registration form created using HTML.</p>
+            </div>
+
+            <div class="project">
+                <h3>Responsive Webpage</h3>
+                <p>A responsive webpage created using HTML and CSS.</p>
+            </div>
+
+            <div class="project">
+                <h3>Calculator</h3>
+                <p>A simple calculator project created using HTML, CSS and JavaScript.</p>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Email: student@example.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>My Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>

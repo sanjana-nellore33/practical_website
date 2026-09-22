@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Practical Programs</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 22px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .card a:hover {
+            background: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Web Practical Programs</h1>
+        <p>HTML, CSS and JavaScript Practical Programs</p>
+    </header>
+
+    <div class="container">
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>HTML Programs</h2>
+                <p>Explore all 15 HTML practical programs.</p>
+                <a href="html/index.html">View HTML Programs</a>
+            </div>
+
+            <div class="card">
+                <h2>CSS Programs</h2>
+                <p>Explore all 270 CSS practical programs.</p>
+                <a href="css/index.html">View CSS Programs</a>
+            </div>
+
+            <div class="card">
+                <h2>JavaScript Programs</h2>
+                <p>Explore all 272 JavaScript practical programs.</p>
+                <a href="javascript/index.html">View JavaScript Programs</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>HTML • CSS • JavaScript</p>
+    </footer>
+
+</body>
+</html>

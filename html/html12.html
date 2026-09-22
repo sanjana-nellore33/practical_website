@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Program 12 - CSS Styling</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 30px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border: 2px solid #333;
+        }
+
+        .text {
+            color: green;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid green;
+        }
+
+        #special {
+            color: purple;
+            background-color: #f3e5f5;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px dashed purple;
+        }
+
+        .box {
+            background-color: lightblue;
+            padding: 20px;
+            margin-top: 20px;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to Programs</a>
+</nav>
+
+
+    <div class="container">
+
+        <h1>CSS Selectors and Styling</h1>
+
+        <p class="text">
+            This paragraph demonstrates color, font, padding, margin and border.
+        </p>
+
+        <p id="special">
+            This paragraph is styled using an ID selector.
+        </p>
+
+        <div class="box">
+            <h2>CSS Box</h2>
+            <p>
+                This box demonstrates background color, padding, margin and border.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
